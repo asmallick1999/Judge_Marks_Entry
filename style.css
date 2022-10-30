@@ -55,7 +55,7 @@ header .navbar {
 }
 
 .candidate button {
-    width: 6rem;
+    width: 5rem;
     height: 3.2rem;
     border: none;
     background: #dbdadabb;
@@ -69,7 +69,7 @@ header .navbar {
 
 /* <!------------- Marks Submit Button  -------------> */
 
-.candidates-section #marksSubmitButton {
+#marksSubmitButton {
     width: 100%;
     height: 3rem;
     background: #00d0ff;
