@@ -17,13 +17,14 @@ header .navbar {
 
 /*  <!---------------- Main Containt Section ------------------ --> */
 /* <!------------- Candidates Section ------ --> */
-.candidates-section{
+.candidates-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 15px 0;
     overflow-x: scroll;
 }
+
 /* <!------------- candate ----------- --> */
 .candidate {
     display: flex;
@@ -64,7 +65,15 @@ header .navbar {
     font-size: 2rem;
     font-weight: bold;
     color: #000000;
+
     /* display: block; */
+}
+
+.candidate button:focus {
+    background: #2adf13;
+    mix-blend-mode: normal;
+    opacity: 1;
+    box-shadow: 0px 3px 13px 2px #2adf13, inset 0px -7px 4px rgb(161 161 161 / 73%);
 }
 
 /* <!------------- Marks Submit Button  -------------> */
