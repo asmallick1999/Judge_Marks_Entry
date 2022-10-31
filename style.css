@@ -7,12 +7,12 @@ body {
 
 /* <!---------------------- header section  -----------------> */
 
+
 /* <!---------------- Nav-Bar Section   --------------> */
 /* <!-------Navbar upper section ----- --> */
 header .navbar {
     padding: 0;
 }
-
 
 
 /*  <!---------------- Main Containt Section ------------------ --> */
@@ -21,7 +21,6 @@ header .navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 15px 0;
     overflow-x: scroll;
 }
 
@@ -33,36 +32,56 @@ header .navbar {
     gap: 0.7rem;
 }
 
-/* <!-- Tag No. Back Ground Shape Div --> */
-.tag-bg-shape {
-    width: 5rem;
-    height: 4vh;
-    background: rgba(158, 252, 250, 0.845);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.20);
+.candidate:nth-child(even) {
+    background-color: #f0f0f0;
 }
 
-.tag-bg-shape p {
+
+
+/* ----------Serial No-----------  */
+
+.candidate h2 {
+    line-height: 1;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/*------------------- Tag No ---------- */
+
+.candidate p {
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
+    background: #acfff5d4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), inset 0px -1px 4px rgba(140, 140, 140, 0.25);
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    width: 80%;
+    margin: 3px 0;
 
 }
 
 .candidate input {
     width: 6rem;
     text-align: center;
-    font-size: 1.2rem;
-    /* display: block; */
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: red;
+    margin: 0 5px;
+    background-color: #feffdb;
+    box-shadow: 0px 2px 4px rgba(123, 123, 123, 0.15);
 }
+
 
 .candidate button {
     width: 5rem;
     height: 3.2rem;
     border: none;
-    background: #dbdadabb;
+    /* background: #dbdadabb; */
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15), inset 0px -2px 6px rgba(0, 0, 0, 0.41);
     border-radius: 20px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #000000;
 
