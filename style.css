@@ -31,11 +31,17 @@ header .navbar {
     flex-direction: column;
     align-items: center;
     gap: 0.7rem;
+    border: 1px dotted rgb(206, 206, 206);
+    border-bottom: 0;
+    border-top: 0;
+    margin-bottom: 27px;
+    
 }
 
 
 .candidate:nth-child(even) {
-    background-color: #f0f0f0;
+    background-color: hsl(71, 100%, 97%);
+    border-radius: none;
 }
 
 
@@ -62,6 +68,7 @@ header .navbar {
     border-top-left-radius: 7px;
     width: 80%;
     margin: 3px 0;
+    padding: 5px 0;
 
 }
 
@@ -70,31 +77,32 @@ header .navbar {
     text-align: center;
     font-size: 1.3rem;
     font-weight: bold;
-    color: red;
+    color: rgb(255, 0, 0);
     margin: 0 5px;
-    background-color: #feffdb;
+    background-color: #fff9f9;
     box-shadow: 0px 2px 4px rgba(123, 123, 123, 0.15);
+    border-radius: 25px;
 }
 
+/* -------------- Marks Button -------------- */
 
-.candidate button {
+.candidate button{
     width: 5rem;
     height: 3.2rem;
     border: none;
-    /* background: #dbdadabb; */
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15), inset 0px -2px 6px rgba(0, 0, 0, 0.41);
     border-radius: 20px;
     font-size: 1.7rem;
     font-weight: bold;
-    color: #000000;
-
+    color: #6b6a6a;
 }
 
 .candidate button:focus {
     background: #2adf13;
-    mix-blend-mode: normal;
-    opacity: 1;
     box-shadow: 0px 3px 13px 2px #2adf13;
+    opacity: 1;
+    color: rgb(12, 2, 71);
+    font-size: 2.1rem;
 }
 
 /* <!------------- Marks Submit Button  -------------> */

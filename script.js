@@ -16,19 +16,8 @@ const candidates = [
         "Tag_No": "554",
         "Marks": "<input type='number' onchange='saveMarksLS(this)' name='11' step='0.01' min='0' max='10' class='form-control border border-dark' placeholder='Max 10' aria-describedby='basic-addon1' required>",
         "Name": "SAYAN SAHA"
-    },
-    {
-        "SL": "4",
-        "Tag_No": "555",
-        "Marks": "<input type='number' onchange='saveMarksLS(this)' name='12' step='0.01' min='0' max='10' class='form-control border border-dark' placeholder='Max 10' aria-describedby='basic-addon1' required>",
-        "Name": "RAHUL DAS"
-    },
-    {
-        "SL": "5",
-        "Tag_No": "1256",
-        "Marks": "<input type='number' onchange='saveMarksLS(this)' name='11423' step='0.01' min='0' max='10' class='form-control border border-dark' placeholder='Max 10' aria-describedby='basic-addon1' required>",
-        "Name": "Ismail Sarkar"
     }
+    
 ]
 
 function myFunction(){
@@ -43,6 +32,7 @@ function myFunction(){
                             <h2>${i.SL}</h2>
                             <p>${i.Tag_No}</p>
                             ${i.Marks}
+                            <button onclick = "btnClicked${i.SL}(5.5)">5.5</button>
                             <button onclick = "btnClicked${i.SL}(6)">6</button>
                             <button onclick = "btnClicked${i.SL}(6.5)">6.5</button>
                             <button onclick = "btnClicked${i.SL}(7)">7</button>
@@ -52,13 +42,12 @@ function myFunction(){
                             <button onclick = "btnClicked${i.SL}(9)">9</button>
                             <button onclick = "btnClicked${i.SL}(9.5)">9.5</button>
                             <button onclick = "btnClicked${i.SL}(10)">10</button>
-                            <button onclick = "btnClicked${i.SL}(5.5)">5.5</button>
+                            <button onclick = "btnClicked${i.SL}(0)">0</button>
                             <button onclick = "btnClicked${i.SL}(5)">5</button>
                             <button onclick = "btnClicked${i.SL}(4)">4</button>
                             <button onclick = "btnClicked${i.SL}(3)">3</button>
                             <button onclick = "btnClicked${i.SL}(2)">2</button>
                             <button onclick = "btnClicked${i.SL}(1)">1</button>
-                            <button onclick = "btnClicked${i.SL}(0)">0</button>
                         </div>  `
     }
 }
