@@ -28,6 +28,12 @@ const candidates = [
         "Tag_No": "1256",
         "Marks": "<input type='number' onchange='saveMarksLS(this)' name='11423' step='0.01' min='0' max='10' class='form-control border border-dark' placeholder='Max 10' aria-describedby='basic-addon1' required>",
         "Name": "Ismail Sarkar"
+    },
+    {
+        "SL": "6",
+        "Tag_No": "1363",
+        "Marks": "<input type='number' onchange='saveMarksLS(this)' name='1363' step='0.01' min='0' max='10' class='form-control border border-dark' placeholder='Max 10' aria-describedby='basic-addon1' required>",
+        "Name": "Suman Kalyan Das "
     }
 ]
 
@@ -45,33 +51,117 @@ function myFunction(){
                             <div class="tag-bg-shape">
                                 <p>${i.Tag_No}</p>
                             </div>
-                            
                             ${i.Marks}
-                            <button>6</button>
-                            <button>6.5</button>
-                            <button>7</button>
-                            <button>7.5</button>
-                            <button>8</button>
-                            <button>8.5</button>
-                            <button>9</button>
-                            <button>9.5</button>
-                            <button>10</button>
-                            <button>5.5</button>
-                            <button>5</button>
-                            <button>4.5</button>
-                            <button>4</button>
-                            <button>3.5</button>
-                            <button>3</button>
-                            <button>2.5</button>
-                            <button>2</button>
-                            <button>1.5</button>
-                            <button>1</button>
-                            <button>0</button>
+                            
+                            <button onclick = "btnClicked${i.SL}(6)">6</button>
+                            <button onclick = "btnClicked${i.SL}(6.5)">6.5</button>
+                            <button onclick = "btnClicked${i.SL}(7)">7</button>
+                            <button onclick = "btnClicked${i.SL}(7.5)">7.5</button>
+                            <button onclick = "btnClicked${i.SL}(8)">8</button>
+                            <button onclick = "btnClicked${i.SL}(8.5)">8.5</button>
+                            <button onclick = "btnClicked${i.SL}(9)">9</button>
+                            <button onclick = "btnClicked${i.SL}(9.5)">9.5</button>
+                            <button onclick = "btnClicked${i.SL}(10)">10</button>
+                            <button onclick = "btnClicked${i.SL}(5.5)">5.5</button>
+                            <button onclick = "btnClicked${i.SL}(5)">5</button>
+                            <button onclick = "btnClicked${i.SL}(4.5)>4.5</button>
+                            <button onclick = "btnClicked${i.SL}(4)>4</button>
+                            <button onclick = "btnClicked${i.SL}(3.5)>3.5</button>
+                            <button onclick = "btnClicked${i.SL}(3)>3</button>
+                            <button onclick = "btnClicked${i.SL}(2.5)>2.5</button>
+                            <button onclick = "btnClicked${i.SL}(2)>2</button>
+                            <button onclick = "btnClicked${i.SL}(1.5)>1.5</button>
+                            <button onclick = "btnClicked${i.SL}(1)>1</button>
+                            <button onclick = "btnClicked${i.SL}(0)>0</button>
                         </div>  `
     
-     }
-
+    }
 }
+
+// Connection with Button and Input Box
+function btnClicked1(val){
+    document.getElementsByTagName('input')[0].value = val;
+}
+function btnClicked2(val){
+    document.getElementsByTagName('input')[1].value = val;
+}
+function btnClicked3(val){
+    document.getElementsByTagName('input')[2].value = val;
+}
+function btnClicked4(val){
+    document.getElementsByTagName('input')[3].value = val;
+}
+function btnClicked5(val){
+    document.getElementsByTagName('input')[4].value = val;
+}
+function btnClicked6(val){
+    document.getElementsByTagName('input')[5].value = val;
+}
+function btnClicked7(val){
+    document.getElementsByTagName('input')[6].value = val;
+}
+function btnClicked8(val){
+    document.getElementsByTagName('input')[7].value = val;
+}
+function btnClicked9(val){
+    document.getElementsByTagName('input')[8].value = val;
+}
+function btnClicked10(val){
+    document.getElementsByTagName('input')[9].value = val;
+}
+function btnClicked11(val){
+    document.getElementsByTagName('input')[10].value = val;
+}
+function btnClicked12(val){
+    document.getElementsByTagName('input')[11].value = val;
+}
+function btnClicked13(val){
+    document.getElementsByTagName('input')[12].value = val;
+}
+function btnClicked14(val){
+    document.getElementsByTagName('input')[13].value = val;
+}
+function btnClicked15(val){
+    document.getElementsByTagName('input')[14].value = val;
+}
+function btnClicked16(val){
+    document.getElementsByTagName('input')[15].value = val;
+}
+function btnClicked17(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked18(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked19(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked20(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked21(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked22(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked23(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked24(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked25(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked26(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+function btnClicked27(val){
+    document.getElementsByTagName('input')[16].value = val;
+}
+
+
 
 
     // // Candidate Div
