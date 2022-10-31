@@ -20,7 +20,8 @@ header .navbar {
 .candidates-section {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
+    text-align: center;
+    justify-content: space-between;
     overflow-x: scroll;
 }
 
@@ -32,9 +33,11 @@ header .navbar {
     gap: 0.7rem;
 }
 
+
 .candidate:nth-child(even) {
     background-color: #f0f0f0;
 }
+
 
 
 
