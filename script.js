@@ -28,7 +28,8 @@ const candidates = [
         "Tag_No": "1256",
         "Marks": "<input type='number' onchange='saveMarksLS(this)' name='11423' step='0.01' min='0' max='10' class='form-control border border-dark' placeholder='Max 10' aria-describedby='basic-addon1' required>",
         "Name": "Ismail Sarkar"
-    }
+    },
+    
 ]
 
 function myFunction(){
