@@ -6,7 +6,13 @@ body {
 
 
 /* <!---------------------- header section  -----------------> */
-
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
 
 /* <!---------------- Nav-Bar Section   --------------> */
 /* <!-------Navbar upper section ----- --> */
@@ -22,7 +28,8 @@ header .navbar {
     align-items: center;
     justify-content: space-between;
     overflow-x: scroll;
-    padding-bottom: 1.6rem;
+    padding-bottom: 1.6rem ;
+    padding-top: 3rem;
 }
 
 /* <!------------- candate ----------- --> */
