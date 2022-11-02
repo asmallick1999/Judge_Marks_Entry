@@ -20,9 +20,9 @@ header .navbar {
 .candidates-section {
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: space-between;
     overflow-x: scroll;
+    padding-bottom: 1.6rem;
 }
 
 /* <!------------- candate ----------- --> */
@@ -35,13 +35,17 @@ header .navbar {
     border-bottom: 0;
     border-top: 0;
     margin-bottom: 27px;
-    
+
 }
 
 
-.candidate:nth-child(even) {
-    background-color: hsl(71, 100%, 97%);
-    border-radius: none;
+.candidates:nth-child(even) {
+    background-color: hsl(77, 100%, 99%);
+    /* background-color: rgba(233, 233, 233, 0.596) */
+}
+
+.candidates:nth-child(odd) {
+    background-color: rgba(233, 233, 233, 0.616)
 }
 
 
@@ -72,38 +76,83 @@ header .navbar {
 
 }
 
-.candidate input {
+.candidate input[type=number] {
     width: 6rem;
+    height: 2.5rem;
     text-align: center;
     font-size: 1.3rem;
     font-weight: bold;
     color: rgb(255, 0, 0);
     margin: 0 5px;
-    background-color: #fff9f9;
-    box-shadow: 0px 2px 4px rgba(123, 123, 123, 0.15);
-    border-radius: 25px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603), inset 0px 0.4px 4px 1.5px rgba(0, 0, 0, 0.537);
+    border-radius: 7px;
+    border: 2px solid rgb(184, 184, 184) !important;
+    /* border: none !important; */
 }
 
 /* -------------- Marks Button -------------- */
-
-.candidate button{
+.input-container {
+    position: relative;
     width: 5rem;
     height: 3.2rem;
-    border: none;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15), inset 0px -2px 6px rgba(0, 0, 0, 0.41);
-    border-radius: 20px;
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #6b6a6a;
+    /* margin: 0.5rem; */
+    /* border: 2px solid rebeccapurple; */
 }
 
-.candidate button:focus {
+.input-container input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+.input-container .radio-tile {
+    background-color: hsl(0, 0%, 97%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.63), inset 0px -2px 6px rgba(0, 0, 0, 0.493);
+    transition: all 00ms ease;
+}
+
+
+
+.input-container label {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #646464;
+    margin-bottom: 0;
+}
+
+
+input:checked+.radio-tile {
     background: #2adf13;
-    box-shadow: 0px 3px 13px 2px #2adf13;
+    box-shadow: 0px 2px 13px 1px #2adf13;
+    transform: scale(1.15);
+    border: 2.3px solid rgb(255, 255, 255);
+}
+
+
+input:hover+.radio-tile {
+    transform: scale(1.2);
+}
+
+
+input:checked+.radio-tile,
+input:checked+.radio-tile label {
     opacity: 1;
     color: rgb(12, 2, 71);
     font-size: 2.1rem;
 }
+
 
 /* <!------------- Marks Submit Button  -------------> */
 
@@ -114,6 +163,7 @@ header .navbar {
     position: fixed;
     bottom: 0px;
     right: 0px;
+    z-index: 2;
     font-size: 1.6rem;
     font-weight: bold;
     color: white;
