@@ -6,7 +6,7 @@ body {
 
 
 /* <!---------------------- header section  -----------------> */
-header{
+header {
     position: fixed;
     top: 0;
     right: 0;
@@ -28,7 +28,7 @@ header .navbar {
     align-items: center;
     justify-content: space-between;
     overflow-x: scroll;
-    padding-bottom: 1.6rem ;
+    padding-bottom: 1.9rem;
     padding-top: 3rem;
 }
 
@@ -47,12 +47,12 @@ header .navbar {
 
 
 .candidates:nth-child(even) {
-    background-color: hsl(77, 100%, 99%);
+    background-color: hsl(72, 100%, 98%);
     /* background-color: rgba(233, 233, 233, 0.596) */
 }
 
 .candidates:nth-child(odd) {
-    background-color: rgba(233, 233, 233, 0.616)
+    background-color: rgba(243, 242, 242, 0.616)
 }
 
 
@@ -84,15 +84,16 @@ header .navbar {
 }
 
 .candidate input[type=number] {
+    background-color: white;
     width: 6rem;
     height: 2.5rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
     color: rgb(255, 0, 0);
     margin: 0 5px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603), inset 0px 0.4px 4px 1.5px rgba(0, 0, 0, 0.537);
-    border-radius: 7px;
+    border-radius: 10px;
     border: 2px solid rgb(184, 184, 184) !important;
     /* border: none !important; */
 }
@@ -118,7 +119,7 @@ header .navbar {
 
 
 .input-container .radio-tile {
-    background-color: hsl(0, 0%, 97%);
+    background-color: rgb(255, 247, 247);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,8 +142,8 @@ header .navbar {
 
 
 input:checked+.radio-tile {
-    background: #2adf13;
-    box-shadow: 0px 2px 13px 1px #2adf13;
+    background-color: #2adf13;
+    /* box-shadow: 0px 2px 13px 1px #2adf13; */
     transform: scale(1.15);
     border: 2.3px solid rgb(255, 255, 255);
 }
@@ -165,15 +166,15 @@ input:checked+.radio-tile label {
 
 #marksSubmitButton {
     width: 100%;
-    height: 3rem;
-    background: #00d0ff;
+    height: 3.2rem;
+    background: #0380ed;
     position: fixed;
     bottom: 0px;
     right: 0px;
     z-index: 2;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
     color: white;
     border: none;
-    box-shadow: 6px -4px 1px rgb(0 0 0 / 1%), inset 1px 1px 5px rgb(0 0 0 / 68%);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.881), inset 1px 1px 5px rgb(0 0 0 / 68%);
 }
