@@ -32,6 +32,10 @@ header .navbar {
     padding-top: 3rem;
 }
 
+.candidates-section-justify{
+    justify-content: space-around !important;
+}
+
 /* <!------------- candate ----------- --> */
 .candidate {
     display: flex;
